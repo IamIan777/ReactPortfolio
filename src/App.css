@@ -21,13 +21,11 @@
   font-size: 70px;
 }
 
-/* organizes nav links neatly under page title */
 .header nav {
   display:inline-block;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* spaces out nav links neatly in a row */
 .header nav ul {
   display:flex;  
   flex-direction: row;
@@ -35,18 +33,25 @@
   list-style-type:none;
 }
 
+.flex {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  background-color: #7d7d7d;
+  color: #000000;
+  font-weight: bold;
+}
+
 .header nav li {
   font-size:20px;
 }
 
-/* changes font-size of nav links to look better on phones */
 @media (max-width:500px) {
   .header nav li {
       font-size:15px;
   }
 }
 
-/* changes link color when pointer hovers over links */
 .navLink:hover {
   color:rgb(114, 114, 47);
   cursor: pointer;
@@ -66,12 +71,11 @@ a {
   text-decoration: none;
 }
 
-/* neatly positions title for article/section titles */
 .titles {
   display:flex;
   flex-direction: column;
   font-size:xx-large;
-  color: rgb(37, 124, 42);
+  color: rgb(0, 0, 0);
   padding:20px;
   margin:20px;
 }
@@ -97,7 +101,6 @@ a {
 }
 
 
-/* positions article image and adds border design */
 .article img {
   display: block;
   margin-left: auto;
@@ -111,14 +114,12 @@ a {
   border-radius: 10%;
 }
 
-/* resizes article img to fit phone screens */
 @media (max-width:500px) {
   .article img {
       width:350px;
   }
 }
 
-/* adds line between article and section */
 article:after 
   { 
       content:"";
@@ -129,16 +130,14 @@ article:after
       margin: 2em auto 0;
   }
 
-/* styles the text in article */
 .content {
   font-size:x-large;
   text-align: center;
-  color: maroon;
+  color: rgb(0, 0, 0);
   padding:10px;
   margin:10px;
 }
 
-/* rescales size of first app img link and brings to center of page */
 .first-app {
   display:flex;
   flex-direction: row;
@@ -151,7 +150,6 @@ article:after
   flex-direction: row;
 }
 
-/* changes second and third app imgs flex-direction to columns on phones */
 @media (max-width:500px){ 
   .other-apps {
       display:flex;
@@ -161,7 +159,6 @@ article:after
   }
 }
 
-/* resizes image of first app img to be bigger than app imgs  */
 .first-app img{
   object-fit:cover;
   width:330px;
@@ -175,19 +172,16 @@ article:after
   border-radius: 10%;
 }
 
-/* resizes article img to fit phone screens */
 @media (max-width:500px) {
   .first-app img {
       width:360px;
   }
 }
 
-/* Containers holding the image and the text */
 .first-app {
   position:relative;
 }
 
-/* positions and designs text block of first app img */
 .text-block .link {
   position:absolute;
   font-size:small;
@@ -200,7 +194,6 @@ article:after
   border-radius: 5%;
 }
 
-/* changes text-block link color when hovered over by pointer  */
 section .link:hover{
   color:purple;
 }
@@ -209,7 +202,6 @@ section .link:hover{
   position: relative;
 }
 
-/* positions and designs text block of second app img */
 .text-block2 .link {
   position:absolute;
   font-size:small;
@@ -226,7 +218,6 @@ section .link:hover{
   position:relative;
 }
 
-/* positions and designs text block of third app img */
 .text-block3 .link {
   position: absolute;
   font-size:small;
@@ -239,7 +230,6 @@ section .link:hover{
   border-radius: 5%;
 }
 
-/* resizes second and third app imgs to neatly fit under first app img */
 .other-apps img {
   object-fit:cover;
   width:330px;
@@ -271,7 +261,6 @@ h2 {
   width:100%
 }
 
-/* neatly organizes contact info in footer */
 .contact {
   display:flex;
   flex-direction: row;
